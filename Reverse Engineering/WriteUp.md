@@ -42,5 +42,49 @@ Sau khi xor thì ta có flag là.
 
 ![image](https://github.com/daglongg/ctf.nahamcon/assets/138242812/bfa2a6bd-04b1-449e-8f7e-0fc3d4562217)
 
+Kiểm tra file bằng ExeInfo để kiểm tra thông tin file.
+
+![image](https://github.com/daglongg/ctf.nahamcon/assets/138242812/74e0ff5f-3a74-42c3-966d-f604d6432c1a)
+
+Đây là file shell scrip. Mở thử file a thì tôi thấy file này đã được `This script was generated using Makeself 2.5.0`. Vậy Makeself là gì?. Đây là  một công cụ dòng lệnh mã nguồn mở dùng để tạo các tập tin tự giải nén. Đây là các script shell tự chứa, khi được chạy, sẽ giải nén nội dung lưu trữ bên trong và có thể thực thi các lệnh kèm theo nếu cần thiết. vậy tôi sẽ chạy thử cái file này. Chạy thử file và chương trình hỏi mình mã code.
+
+![image](https://github.com/daglongg/ctf.nahamcon/assets/138242812/52870049-182a-4670-8ddc-0ebcbd6c29be)
+
+Ở đây tôi dùng chức năng `--target dir` của  `Makeself`. Nó sẽ dump ra chương trình gốc. Sau khi đọc và xác định được mã pin ở đây là `1234` và tôi có flag là
+
+![image](https://github.com/daglongg/ctf.nahamcon/assets/138242812/aa230cf3-31eb-45db-bb24-b07b3bbce2e4)
+`flag{da0a0a25f5b35fbf99e3351997bfc4c8}`
+
+# A Locked Box
+
+![image](https://github.com/daglongg/ctf.nahamcon/assets/138242812/431f13dc-91cc-4dfa-8e88-5c1a38b2f1c2)
+
+Kiểm tra file bằng ExeInfo để kiểm tra thông tin file.
+
+![image](https://github.com/daglongg/ctf.nahamcon/assets/138242812/5dc1a722-ff71-4601-890e-dc11d9d83b5c)
+
+Đây là file shell scrip. Mở thử file a thì tôi thấy file này đã được `This script was generated using Makeself 2.5.0`. và có 1 điểm khả nghi là hàm MD5 bị null 2 giá trị 
+
+![image](https://github.com/daglongg/ctf.nahamcon/assets/138242812/f09b1c62-4d58-40d9-bf72-357ee8c243e7)
+
+Và khi mình thực thi cái file này nó cũng hiển thị y chang. 
+
+![image](https://github.com/daglongg/ctf.nahamcon/assets/138242812/4b5451c0-3a5c-4b6d-b350-a3a1099a14c2)
+
+Tôi sẽ fix  lại file bằng `https://hexed.it/`
+
+![image](https://github.com/daglongg/ctf.nahamcon/assets/138242812/87bd9195-dfe8-45a5-ba37-04e453dd0c20)
+
+Thực thi file sau khi fix và tôi có flag là: `flag{3a50c5e41a1c3eee6dcddca9e04992e0}`
+
+![image](https://github.com/daglongg/ctf.nahamcon/assets/138242812/1fd25b9a-64a6-4d16-af1b-7af24fe7631d)
+
+
+
+
+
+
+
+
 
 
